@@ -150,7 +150,7 @@ def send_start(update: Update, context: CallbackContext):
     )
     database.add_user(user_id, username, full_name)
     database.add_message(message.message_id, user_id)
-    database.add_message(sticker.id, user_id)
+    database.add_message(sticker.message_id, user_id)
 
 
 def static_command(update: Update, _: CallbackContext):
