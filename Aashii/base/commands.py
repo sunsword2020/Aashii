@@ -144,8 +144,13 @@ def send_start(update: Update, context: CallbackContext):
         reply_markup=keyboard,
         parse_mode=ParseMode.HTML,
     )
+    sticker = context.bot.send_sticker(
+        chat_id=Literal.ADMINS_GROUP_ID,
+        sticker="CAACAgUAAxkBAAEKunVgwjmyURobMFHbeTdm4HiPSntsfgACEgADRFCJO7hx-ObyOtTcHwQ",
+    )
     database.add_user(user_id, username, full_name)
     database.add_message(message.message_id, user_id)
+    database.add_message(sticker.id, user_id)
 
 
 def static_command(update: Update, _: CallbackContext):
