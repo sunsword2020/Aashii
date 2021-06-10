@@ -103,7 +103,10 @@ class Message:
     START_GROUP = "I'm all alive and functioning."
 
     START_PRIVATE = (
-        "Hello. What do you want to convey the admins of <b>{GROUP_NAME}</b> ?"
+        "Hello, you have reached {GROUP_NAME} Administration."
+        "Please type out your message, your query will be answered shortly...\n\n"
+        "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
+        "Enjoy !"
     )
 
     UNBLOCKED_USER = (
