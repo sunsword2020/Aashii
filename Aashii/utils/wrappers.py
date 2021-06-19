@@ -4,6 +4,22 @@ from telegram.ext import CallbackContext
 from Aashii.constants import Message
 
 
+def add_user(func):
+
+    """
+    Adds the user to database.
+    """
+
+    def wrapped(update: Update, context: CallbackContext):
+
+        database = context.bot_data["database"]
+        user = update.effective_user
+        database.add_user(user.id, user.username, user.full_name)
+        func(update, context)
+
+    return wrapped
+
+
 def check_is_blocked_by_user(func):
 
     """
