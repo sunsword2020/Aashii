@@ -3,6 +3,7 @@ from telegram.ext import CallbackContext
 from Aashii.constants import Button, Literal, Message
 from Aashii.utils.misc import announce, block_user, unblock_user
 from Aashii.utils.wrappers import (
+    add_user,
     check_is_blocked_by_user,
     check_is_group_command,
     check_is_reply_verbose,
@@ -91,6 +92,7 @@ def cancel_announcement(update: Update, context: CallbackContext):
     update.message.reply_html(text)
 
 
+@add_user
 def send_help(update: Update, _):
 
     """
@@ -153,6 +155,7 @@ def send_start(update: Update, context: CallbackContext):
     database.add_message(sticker.message_id, user_id)
 
 
+@add_user
 def static_command(update: Update, _: CallbackContext):
 
     command = update.message.text[1:].split("@")[0]
