@@ -103,7 +103,7 @@ class Message:
     START_GROUP = "I'm all alive and functioning."
 
     START_PRIVATE = (
-        "Hello, you have reached {GROUP_NAME} Administration."
+        "Hello, you have reached {GROUP_NAME} Administration, A @BooksHub25 Enterprise."
         "Please type out your message, your query will be answered shortly...\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
         "Enjoy !"
