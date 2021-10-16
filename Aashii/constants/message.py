@@ -1,13 +1,8 @@
-"""
-Contains Message object.
-"""
+"""Contains Message object."""
 
 
 class Message:
-
-    """
-    Message contains text strings that is used in users interaction.
-    """
+    """Message contains text strings that is used in users interaction."""
 
     ADMIN_CONNECTED = (
         "<a href='tg://user?id={ADMIN_ID}'>{ADMIN_FULL_NAME}</a> "
@@ -58,6 +53,18 @@ class Message:
         "Cancelled announcement at <code>{PROGRESS}</code>% progress."
     )
 
+    DELETE_DONE = "Message deleted successfully!"
+
+    DELETE_FAILED = "I can't delete that message …"
+
+    ENTITY_FORWARD_ANONYMOUS = "<b>Forwarded from {SENDER_NAME}</b>\n{FROM}"
+
+    ENTITY_FORWARD_CHAT = "<b>Forwarded from <a href='tg://user?id={FROM_CHAT_ID}'>{FROM_CHAT_NAME}</a></b>\n{FROM}"
+
+    ENTITY_FORWARD_USER = "<b>Forwarded from <a href='tg://user?id={FROM_USER_ID}'>{FROM_FULL_NAME}</a></b>\n{FROM}"
+
+    ENTITY_FROM = "<b><a href='tg://user?id={USER_ID}'>{FULL_NAME}</a></b>\n\n"
+
     ERROR = "Oops ! I faced an error : <code>{ERROR}</code>\n<code>{TRACEBACK}</code>"
 
     FALLBACK_STATUS = "Left"
@@ -88,13 +95,11 @@ class Message:
         "Enjoy !"
     )
 
-    INVALID_COMMAND = "I don't understand what you are talking about ..."
+    INVALID_COMMAND = "I don't understand what you are talking about …"
 
     INVALID_REPLY = "I expected this as a reply to a valid message."
 
     NO_ANNOUNCEMENT = "No announcement is in due to cancel."
-
-    NO_USERNAME = "None"
 
     NOT_LINKED = "I don't think that message corresponds to any user."
 
@@ -115,11 +120,20 @@ class Message:
 
     UNBLOCKED_USER_STATUS = "You are now allowed to contact the admins."
 
+    USER = (
+        "Name : <a href='tg://user?id={USER_ID}'>{FULL_NAME}</a>\n"
+        "Username : {USERNAME}\n"
+        "User ID : <code>{USER_ID}</code>\n"
+        "Membership : {MEMBERSHIP}\n"
+        "Blocked : {BLOCKED}"
+    )
+
     USER_CONNECTED = (
         "<a href='tg://user?id={USER_ID}'>{FULL_NAME}</a> has started the bot.\n"
         "Username : {USERNAME}\n"
         "User ID : <code>{USER_ID}</code>\n"
-        "Status : {STATUS}"
+        "Membership : {MEMBERSHIP}\n"
+        "Blocked : {BLOCKED}"
     )
 
     USER_NOT_FOUND = "I can't find the user in my database, something's wrong ..."

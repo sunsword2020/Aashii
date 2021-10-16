@@ -1,15 +1,10 @@
-"""
-Contains Literal object.
-"""
+"""Contains Literal object."""
 
 import os
 
 
 class Literal:
-
-    """
-    Lieral contains values that are simple and never change, like admins' group ID.
-    """
+    """Lieral contains values that are simple and never change, like admins' group ID."""
 
     ADMINS_GROUP_ID = os.getenv("ADMINS_GROUP_ID")
 
@@ -22,6 +17,8 @@ class Literal:
     GROUP_NAME = os.getenv("GROUP_NAME", "Illuminati")
 
     INFORM_ERROR = os.getenv("INFORM_ERROR", "TRUE") == "TRUE"
+
+    REPLY_CHARACTER = os.getenv("REPLY_CHARACTER", "!")
 
     STEP = int(os.getenv("STEP", "10"))
 
