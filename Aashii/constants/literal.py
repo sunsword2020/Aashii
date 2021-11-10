@@ -6,11 +6,11 @@ import os
 class Literal:
     """Lieral contains values that are simple and never change, like admins' group ID."""
 
-    ADMINS_GROUP_ID = os.getenv("ADMINS_GROUP_ID")
+    ADMINS_GROUP_ID = int(os.getenv("ADMINS_GROUP_ID"))
 
     ANNOUNCEMENT_INTERVAL = float(os.getenv("ANNOUNCEMENT_INTERVAL", "0.5"))
 
-    CHAT_GROUP_ID = os.getenv("CHAT_GROUP_ID")
+    CHAT_GROUP_ID = int(os.getenv("CHAT_GROUP_ID"))
 
     DELAY_SECONDS = int(os.getenv("DELAY_SECONDS", "2"))
 
