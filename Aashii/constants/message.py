@@ -112,11 +112,11 @@ class Message:
     START_GROUP = "I'm all alive and functioning."
 
     START_PRIVATE = (
-        "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b>"
+        "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b> \n"
         "Please type out your message, your query will be answered shortly...\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
         "Enjoy! \n\n"
-        "Note: <i>Don't request books via the bot or you'll be blocked!</i>"    )
+        "<b>Note:</b> <i>Don't request books via the bot or you'll be blocked!</i>"    )
 
     UNBLOCKED_USER = (
         "<a href='tg://user?id={USER_ID}'>{FULL_NAME}</a> has been unblocked."
