@@ -115,7 +115,7 @@ class Message:
         "Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise."
         "Please type out your message, your query will be answered shortly...\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
-        "Enjoy !" 
+        "Enjoy! \n\n" 
         "Note: Don't request books via the bot or you'll be blocked!"    )
 
     UNBLOCKED_USER = (
