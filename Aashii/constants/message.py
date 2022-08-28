@@ -90,14 +90,12 @@ class Message:
     )
 
     HELP_PRIVATE = (
-        "Hey there ! It's <b>Aashii</b> here to help you "
-        "in managing communication between members and admins.\n\n"
-        "From a <b>member</b> point of view, using me is dead easy.\n"
-        "Just send me any message you wish to inform the admins and "
-        "I will forward it to them.\n\n"
-        "My source code is available at https://github.com/j-arun-mani/Aashii\n"
-        "Enjoy !"
-    )
+        "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b> \n"
+        "Please type out your message, your query will be answered shortly...\n\n"
+        "If you want to join the BooksHub Request group then tap on /invite\n\n"
+        "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
+        "Enjoy! \n\n"
+        "<b>Note:</b> <i>Don't request books via the bot or you'll be blocked!</i>"    )
 
     INVALID_COMMAND = "I don't understand what you are talking about …"
 
@@ -114,6 +112,7 @@ class Message:
     START_PRIVATE = (
         "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b> \n"
         "Please type out your message, your query will be answered shortly...\n\n"
+        "If you want to join the BooksHub Request group then tap on /invite\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
         "Enjoy! \n\n"
         "<b>Note:</b> <i>Don't request books via the bot or you'll be blocked!</i>"    )
