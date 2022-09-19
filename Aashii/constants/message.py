@@ -91,11 +91,11 @@ class Message:
 
     HELP_PRIVATE = (
         "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b> \n"
-        "Please type out your message, your query will be answered shortly...\n\n"
         "If you want to join the BooksHub Request group then tap on /invite\n\n"
+        "If you have any other queries, please type out your message, your query will be answered shortly...\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
         "Enjoy! \n\n"
-        "<b>Note:</b> <i>Don't request books via the bot or you'll be blocked!</i>"    )
+        "<b>Note:</b> <i>DON'T REQUEST BOOKS VIA THIS BOT OR YOU'LL BE BANNED ACROSS BOOKSHUB!</i>"    )
 
     INVALID_COMMAND = "I don't understand what you are talking about …"
 
@@ -111,11 +111,11 @@ class Message:
 
     START_PRIVATE = (
         "<b>Hello, you have reached {GROUP_NAME} Administration, a @BooksHub25 Enterprise.</b> \n"
-        "Please type out your message, your query will be answered shortly...\n\n"
         "If you want to join the BooksHub Request group then tap on /invite\n\n"
+        "If you have any other queries, please type out your message, your query will be answered shortly...\n\n"
         "This bot was made possible by an open source repo: https://github.com/j-arun-mani/Aashii\n"
         "Enjoy! \n\n"
-        "<b>Note:</b> <i>Don't request books via the bot or you'll be blocked!</i>"    )
+        "<b>Note:</b> <i>DON'T REQUEST BOOKS VIA THIS BOT OR YOU'LL BE BANNED ACROSS BOOKSHUB!</i>"    )
 
     UNBLOCKED_USER = (
         "<a href='tg://user?id={USER_ID}'>{FULL_NAME}</a> has been unblocked."
